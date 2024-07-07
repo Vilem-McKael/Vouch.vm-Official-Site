@@ -16,15 +16,15 @@ export default function NavBar() {
                         <img className='rounded-md w-[40px]' src={vouchLogo1} />
                         <div className='pt-3'>Home</div>
                     </Link>
-                    <Link to='/About' className='flex flex-col justify-center items-center hover:scale-110 duration-100'>
+                    <Link to='/about' className='flex flex-col justify-center items-center hover:scale-110 duration-100'>
                         <InfoLogo/>
                         <div className='pt-3'>About</div>
                     </Link>
-                    <Link to='/Gallery' className='flex flex-col justify-center items-center hover:scale-110 duration-100'>
+                    <Link to='/gallery' className='flex flex-col justify-center items-center hover:scale-110 duration-100'>
                         <GalleryLogo/>
                         <div className='pt-3'>Gallery</div>
                     </Link>
-                    <Link to='/Support' className='flex flex-col justify-center items-center hover:scale-110 duration-100'>
+                    <Link to='/support' className='flex flex-col justify-center items-center hover:scale-110 duration-100'>
                         <img className='w-[40px] rounded-md' src={vouchLogo1} />
                         <div className='pt-3'>Support</div>
                     </Link>
