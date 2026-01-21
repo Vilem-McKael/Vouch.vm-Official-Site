@@ -55,6 +55,17 @@ export default function AboutPage() {
             Coming soon!
           </div>
           <div>
+            Up and Coming Features:
+          </div>
+          <div>
+          <ul>
+            <li>An inbox for notifications, such as new follows, likes, etc.</li>
+            <li>In addition, the inbox will have a section for "recommendations". Recommendations will be a feature that will allow users to directly recommend media to one another directly without having to post it to their profile and feed.</li>
+            <li></li>
+          </ul>
+          </div>
+          <div>
+          
           Vouch.vm was developed for two reasons; the first was to create a space for artists and non-artists alike to share day-by-day what is keeping them inspired. I found myself constantly exchanging music, movie recommendations, etc. in group chats with various friend groups over the years. However, after I missed songs and movie recommendations from my friends because they'd gotten drowned out, I decided there had to be a better way.
           </div>
           <div>

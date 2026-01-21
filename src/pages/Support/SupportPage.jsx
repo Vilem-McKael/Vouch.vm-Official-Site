@@ -13,23 +13,23 @@ export default function SupportPage() {
     message: ""
   })
 
-  const handleSubmit = (event) => {
-    // event.preventDefault()
+  // const handleSubmit = (event) => {
+  //   // event.preventDefault()
 
-    const contactForm = event.target;
-    const formData = new FormData(contactForm);
-    fetch('/contact', {
-      method: "POST",
-      headers: {"Content-Type": "application/x-www-form-urlencoded"},
-      body: new URLSearchParams(formData).toString()
-    })
-    .then(() => console.log("Form successfully submitted"))
-    .catch((error) => alert(error))
+  //   const contactForm = event.target;
+  //   const formData = new FormData(contactForm);
+  //   fetch('/contact', {
+  //     method: "POST",
+  //     headers: {"Content-Type": "application/x-www-form-urlencoded"},
+  //     body: new URLSearchParams(formData).toString()
+  //   })
+  //   .then(() => console.log("Form successfully submitted"))
+  //   .catch((error) => alert(error))
 
-    event.preventDefault()
+  //   event.preventDefault()
 
-    setHasSubmitted(true)
-  }
+  //   setHasSubmitted(true)
+  // }
 
   // document.querySelector("form").addEventListener("submit", handleSubmit)
 
@@ -47,38 +47,41 @@ export default function SupportPage() {
       </div>
       
       <div className='h-full w-full flex-col items-center'>
-      {!hasSubmitted && <form className='flex flex-col items-center justify-center py-12 w-full px-8' name='contact' method='POST' data-netlify="true" onSubmit={handleSubmit}>
+      {!hasSubmitted && <form className='flex flex-col items-center justify-center py-12 w-full px-8 [&_input]:text-black [&_textarea]:text-black' action='https://formspree.io/f/mqeeybpb' name='contact' method='POST' data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />
-        <div className=''>
-          <div className=''>
+        <div className='flex flex-col items-start w-full max-w-[480px] space-y-4'>
+          <div className='flex flex-col'>
             <label >
               Name
             </label>
-            <input type='text' name='name' className=''>
+            <input type='text' name='name' className='px-2 py-1 rounded-sm'>
 
             </input>
           </div>
-          <div className=''>
+          <div className='flex flex-col'>
             <label>
               E-Mail
             </label>
-            <input type='text' name='email' className=''>
+            <input type='text' name='email' className='px-2 py-1 rounded-sm'>
 
             </input>
           </div>
-        </div>
-        <div className=''>
-          <label className=''>
+
+        <div className='flex flex-col'>
+          <label className='mb-[-2]'>
             Please leave your message below :
           </label>
-        </div>
-        <textarea name='message' className=''>
+        
 
-        </textarea>
+          <textarea name='message' className='px-2 py-1 rounded-sm'>
+          </textarea>
+        </div>
+        
         <div className=''>
-          <button type='submit' className='h-[40px] bg-black text-white mt-2 p-2 rounded-lg transform hover:scale-110 duration-75'>
+          <button type='submit' className='h-[40px] bg-black text-white mt-2 p-2 rounded-lg border border-white transform hover:scale-110 duration-75'>
             <i className=''></i>Send
           </button>
+        </div>
         </div>
       </form>}
       </div>

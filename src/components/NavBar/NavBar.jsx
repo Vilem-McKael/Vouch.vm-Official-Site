@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import vouchLogo1 from '../../assets/vouch.png'
+import vouchLogo1 from '../../assets/vouchNew.png'
 import { IoMdInformationCircle as InfoLogo } from "react-icons/io";
 import { DiPhonegap as GalleryLogo } from "react-icons/di";
+import { MdConnectWithoutContact as ContactLogo } from "react-icons/md"
 import { IconContext } from 'react-icons';
 
 export default function NavBar() {
@@ -25,7 +26,7 @@ export default function NavBar() {
                         <div className='pt-3'>Gallery</div>
                     </Link>
                     <Link to='/support' className='flex flex-col justify-center items-center hover:scale-110 duration-100'>
-                        <img className='w-[40px] rounded-md' src={vouchLogo1} />
+                        <ContactLogo />
                         <div className='pt-3'>Support</div>
                     </Link>
                 </div>
