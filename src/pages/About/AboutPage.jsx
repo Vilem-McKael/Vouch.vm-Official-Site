@@ -3,15 +3,15 @@ import React from 'react'
 export default function AboutPage() {
   return (
     <div className='w-full flex flex-col items-center'>
-      <div className='w-full pt-8 px-8 md:w-[800px]'>
-        <div className='text-[2rem]'>
+      <div className='w-full pt-8 px-8 md:w-[800px] [&>*]:mb-6'>
+        <div className='text-[2rem] mb-4'>
           Vouch.vm
         </div>
-        <div className='text-[1.5rem]'>
+        {/* <div className='text-[1.5rem]'>
           Share The Media That Inspires You; Find New Inspiration
           
-        </div>
-        <div className=''>
+        </div> */}
+        <div className='mb-6'>
           
           Vouch.vm is a mobile application that creates a space for users to share the media that is making an impact on their life, and equally be inspired by the media that is inspiring the lives of others. The name "vouch" comes from the nature of the posts here: by posting a piece of media, artist, etc., you are "vouching" for it to those that follow you. If people typically enjoy your taste, or are simply interested in what is inspiring you, they are likely to check out the media that you have "vouched" for. The VM is simply an acronym for the name of the developer.
           </div>

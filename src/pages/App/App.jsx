@@ -18,12 +18,14 @@ function App() {
   return (
     <main className='App'>
       <NavBar/>
-      <Routes>
-        <Route path='/*' element={<LandingPage />} />
-        <Route path='/about' element={<AboutPage />} />
-        <Route path='/gallery' element={<GalleryPage />} />
-        <Route path='/support' element={<SupportPage />} />
-      </Routes>
+      <div className='pt-[120px]'>
+        <Routes>
+          <Route path='/*' element={<LandingPage />} />
+          <Route path='/about' element={<AboutPage />} />
+          <Route path='/gallery' element={<GalleryPage />} />
+          <Route path='/support' element={<SupportPage />} />
+        </Routes>
+      </div>
     </main>
     
   )
