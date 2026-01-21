@@ -43,7 +43,7 @@ export default function SupportPage() {
         Contact
       </div>
       <div className='mx-8 md:max-w-full md:mx-16 mt-4 text-sm sm:text-base mobileLandscape:w-[400px] sm:w-[600px]'>
-        {hasSubmitted ? "Thank you for contacting me. I am working hard to make sure Vouch.vm is the best application it can be. I will get back to you as soon as I can!" : "Get in touch with the developer regarding any bugs or crashes you may have experienced, any user interface problems you are having, any features you would like to see, or for any reason at all!"}
+        {hasSubmitted ? "Thank you for contacting me. I am working hard to make sure Vouch.vm is the best application it can be. I will get back to you as soon as I can!" : "Get in touch with the developer for access to the alpha, or regarding any bugs, crashes, any user interface issues, feature suggestions!"}
       </div>
       
       <div className='h-full w-full flex-col items-center'>
